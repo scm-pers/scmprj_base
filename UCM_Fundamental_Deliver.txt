@@ -4,11 +4,14 @@ I know what they mean but I feel that they do not sound 100% correct. What are t
 
 
 In short,
+
+
 • When we deliver, we deliver a baseline TO another stream 
  
 • When we rebase, we rebase a stream TO a baseline of another stream
  
 Please note that we speak from the view point of the development stream.
+
 • For development stream to send changes to integration stream, we deliver the development stream 's baseline to integration stream 
  
 • For development stream to receive changes from integration stream, we rebase the development stream to a baseline of integration stream
