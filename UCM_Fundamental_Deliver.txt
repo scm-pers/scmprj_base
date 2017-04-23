@@ -4,40 +4,30 @@ I know what they mean but I feel that they do not sound 100% correct. What are t
 
 
 In short,
-•
- When we deliver, we deliver a baseline TO another stream 
+â€¢ When we deliver, we deliver a baseline TO another stream 
  
-•
- When we rebase, we rebase a stream TO a baseline of another stream
+â€¢ When we rebase, we rebase a stream TO a baseline of another stream
  
-
 Please note that we speak from the view point of the development stream.
-•
- For development stream to send changes to integration stream, we deliver the development stream 's baseline to integration stream 
+â€¢ For development stream to send changes to integration stream, we deliver the development stream 's baseline to integration stream 
  
-•
- For development stream to receive changes from integration stream, we rebase the development stream to a baseline of integration stream
+â€¢ For development stream to receive changes from integration stream, we rebase the development stream to a baseline of integration stream
+ When we deliver, we have the options to deliver a stream 
  
-
-When we deliver, we have the options to
-•
- deliver a stream 
- 
-•
  deliver a specific baseline 
- 
-•
+
+â€¢
  deliver selected activities
  
 
 If we look closely,
-•
+â€¢
  when deliver a stream, an internal baseline is created, and that baseline is delivered 
  
-•
+â€¢
  when deliver a specific baseline, and that specific baseline is delivered 
  
-•
+â€¢
  when deliver selected activities, an internal baseline is created, and that baseline is delivered
  
 
@@ -50,13 +40,13 @@ When we rebase, we cannot simply just rebase to a stream. We have to select a sp
 In summary,
 
 When we deliver, we 
-•
+â€¢
  deliver a baseline TO another stream 
  
-•
+â€¢
  deliver a stream TO another stream 
  
-•
+â€¢
  deliver activities TO another stream
  
 
