@@ -1,0 +1,65 @@
+I always hear the following from other ClearCase users. "Deliver from development stream to integration stream" "Rebase from integration stream to development stream"
+
+I know what they mean but I feel that they do not sound 100% correct. What are the correct/acceptable ways of saying rebase/deliver in ClearCase? 
+
+
+In short,
+•
+ When we deliver, we deliver a baseline TO another stream 
+ 
+•
+ When we rebase, we rebase a stream TO a baseline of another stream
+ 
+
+Please note that we speak from the view point of the development stream.
+•
+ For development stream to send changes to integration stream, we deliver the development stream 's baseline to integration stream 
+ 
+•
+ For development stream to receive changes from integration stream, we rebase the development stream to a baseline of integration stream
+ 
+
+When we deliver, we have the options to
+•
+ deliver a stream 
+ 
+•
+ deliver a specific baseline 
+ 
+•
+ deliver selected activities
+ 
+
+If we look closely,
+•
+ when deliver a stream, an internal baseline is created, and that baseline is delivered 
+ 
+•
+ when deliver a specific baseline, and that specific baseline is delivered 
+ 
+•
+ when deliver selected activities, an internal baseline is created, and that baseline is delivered
+ 
+
+note for 1: if there is no change since last baseline made, then last baseline will be delivered, and no baseline will be created
+
+note for 3: if there is no change in those activities since last baseline made, then last baseline will be delivered and no baseline will be created
+
+When we rebase, we cannot simply just rebase to a stream. We have to select a specific baseline to take changes from. That's why the correct way of saying is rebase development stream to a baseline of an integration stream.
+
+In summary,
+
+When we deliver, we 
+•
+ deliver a baseline TO another stream 
+ 
+•
+ deliver a stream TO another stream 
+ 
+•
+ deliver activities TO another stream
+ 
+
+but remember that fundamentally/internally we deliver a baseline
+
+When we rebase, we rebase a stream TO a baseline of another stream.
